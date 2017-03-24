@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <title>ethlunch</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+  <style>
+    #output {
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ui grid padded">
+    <div class="column sixteen wide">
+      <h1>ethlunch</h1>
+    </div>
+    <div class="column sixteen wide">
+      <div class="ui grid">
+        <div class="column eight wide">
+          <form class="ui form">
+            <div class="field">
+              <label>Add Restaurant</label>
+              <input type="text" id="addRestaurantInput" placeholder="Add restaurant" />
+            </div>
+            <div class="field">
+              <button id="addRestaurantButton" class="ui button">Add restaurant</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="ui grid">
+        <div class="column eight wide">
+          <form class="ui form">
+            <div class="field">
+              <label>Vote for Restaurant</label>
+              <input type="text" id="voteInput" placeholder="Restaurant to vote for" />
+            </div>
+            <div class="field">
+              <button id="submitVoteButton" class="ui button">Submit vote</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="ui grid">
+        <div class="column eight wide">
+          <form class="ui form">
+            <div class="field">
+              <label>Get tally for Restaurant</label>
+              <input type="text" id="getVotesInput" placeholder="Get votes for Restaurant" />
+            </div>
+            <div class="field">
+              <button id="getVotesButton" class="ui button">Get Votes</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <pre id="output"></pre>
+
+  <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+  <script src="bundle.js"></script>
+</body>
+</html>
